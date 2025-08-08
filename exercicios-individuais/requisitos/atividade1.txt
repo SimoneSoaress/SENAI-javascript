@@ -1,0 +1,31 @@
+Requisitos Funcionais (RF): Definem o que o sistema deve fazer.
+1. Cadastro de Usuário
+2. Autenticação de Usuário
+3. Recuperação de Senha
+4. Redefinição de Senha
+
+Requisitos Não Funcionais (RNF): Definem restrições de qualidade, desempenho e segurança.
+RNF01: O sistema deve garantir que todas as senhas armazenadas sejam criptografadas.
+RNF02: O sistema deve garantir que os dados de autenticação (como senhas, tokens de autenticação) sejam transmitidos apenas por meio de conexões seguras (HTTPS).
+RNF03: O sistema deve ser capaz de autenticar um usuário em até 3 segundos.
+RNF04: O sistema deve ser escalável para suportar o aumento do número de usuários e autenticações sem perda de desempenho.
+RNF05: O sistema deve fornecer uma interface de login simples e intuitiva, com campos claros para nome de usuário, senha e opção de recuperação de senha.
+RNF06: O sistema deve fornecer um processo de recuperação de senha fácil e rápido, com instruções claras para o usuário.
+RNF07: O sistema deve ser capaz de lidar com falhas inesperadas (exemplo: perda de conexão com o banco de dados) sem causar interrupções graves para os usuários.
+RNF08: O sistema deve ser modular e fácil de atualizar, permitindo a adição ou remoção de funcionalidades sem grandes impactos no sistema.
+RNF09: O código do sistema de autenticação deve ser bem documentado para facilitar a manutenção futura.
+RNF10: O sistema de autenticação deve ser compatível com as versões mais recentes dos principais navegadores (Chrome, Edge, etc.). 
+RNF11: O sistema de autenticação deve ser acessível em dispositivos móveis (smartphones e tablets) e desktops.
+RNF12: O sistema deve garantir a conformidade com a legislação vigente de proteção de dados (exemplo: LGPD no Brasil, GDPR na União Europeia), incluindo o armazenamento seguro de dados pessoais e a implementação de políticas de consentimento.
+RNF13: O sistema deve permitir que o usuário exclua sua conta e dados pessoais a qualquer momento, conforme exigido pela legislação de proteção de dados.
+
+
+Regras de Negócio (RN): Definem as regras da empresa.
+RN01: Usuários devem fornecer um e-mail único para se cadastrar no sistema.
+RN02: O cadastro de usuários deve ser realizado por meio de um e-mail válido e não pode ser concluído sem a confirmação desse e-mail (link de ativação enviado).
+RN03: As senhas devem seguir uma política de segurança (mínimo de 8 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais).
+RN04: O sistema deve permitir a recuperação de senha por e-mail, mas somente após a verificação de identidade (respostas a perguntas de segurança, por exemplo).
+RN05: O processo de recuperação de senha deve ser concluído dentro de 15 minutos após o envio do e-mail de recuperação, para garantir que o processo seja seguro e rápido.
+RN06: Após 5 tentativas de login falhas, a conta do usuário deve ser bloqueada temporariamente por 30 minutos.
+RN07: O sistema deve enviar um e-mail de notificação para o usuário quando sua conta for bloqueada.
+RN08: Quando um usuário solicitar a exclusão de sua conta, todos os dados pessoais associados à conta devem ser removidos permanentemente, em conformidade com a legislação de proteção de dados (ex: LGPD, GDPR).
