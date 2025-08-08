@@ -36,3 +36,13 @@ RNF11: O código do sistema deve ser bem documentado, facilitando futuras atuali
 
 
 Regras de Negócio (RN): Definem as regras da empresa.
+RN01: O sistema deve permitir que o cliente se registre usando um e-mail válido ou número de telefone. O cadastro não pode ser concluído sem a verificação do e-mail ou telefone.
+RN02: O sistema deve exigir que o cliente forneça um endereço de entrega completo (rua, número, cidade, estado, CEP) ao realizar o cadastro ou fazer o pedido.
+RN03: O sistema deve permitir que o cliente personalize seus pedidos, como adicionar ou remover ingredientes do hambúrguer, escolher o ponto da carne e selecionar o tamanho do acompanhamento.
+RN04: O cliente deve poder escolher entre diferentes opções de combinações (exemplo: combo com batata frita e refrigerante) e aplicar descontos promocionais.
+RN05: O sistema deve permitir que a hamburgueria configure promoções específicas, como descontos em produtos ou combos, e aplicar esses descontos automaticamente no carrinho de compras.
+RN06: O sistema deve garantir que códigos promocionais ou cupons de desconto sejam válidos apenas uma vez por usuário ou por pedido.
+RN07: Promoções não podem ser combinadas, a menos que explicitamente permitido pela hamburgueria.
+RN08: O sistema deve registrar o horário de cada pedido e calcular automaticamente o tempo estimado de entrega, de acordo com a capacidade atual da cozinha e a distância do cliente.
+RN09: O sistema deve permitir que a equipe da cozinha marque os pedidos como "em preparo", "pronto para entrega", "entregue", para garantir o acompanhamento eficiente do processo.
+RN10: O sistema deve enviar notificações em tempo real para os clientes sobre o status do pedido, incluindo confirmação de recebimento, início do preparo e envio para entrega.
