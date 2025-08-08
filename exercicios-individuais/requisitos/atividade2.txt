@@ -1,0 +1,38 @@
+Requisitos Funcionais (RF): Definem o que o sistema deve fazer.
+RF01: O sistema deve permitir que o cliente se cadastre utilizando e-mail, número de telefone ou redes sociais.
+RF02: O sistema deve permitir que o cliente faça login em sua conta para consultar pedidos anteriores, salvar endereços de entrega, e personalizar preferências.
+RF03: O sistema deve permitir a recuperação de senha caso o cliente esqueça.
+RF04: O sistema deve exibir o cardápio da hamburgueria, com uma lista de itens disponíveis (hambúrgueres, acompanhamentos, bebidas, etc.), incluindo preços e descrições.
+RF05: O sistema deve permitir que o cliente adicione itens ao seu pedido, podendo customizar (exemplo: escolher o ponto da carne, adicionar ou remover ingredientes).
+RF06: O sistema deve exibir promoções e combos disponíveis, com a possibilidade de o cliente escolher esses combos para simplificar o processo de pedido.
+RF07: O sistema deve permitir que o cliente visualize e edite o conteúdo de seu carrinho de compras (adicionar, remover, alterar quantidade de itens).
+RF08: O sistema deve calcular automaticamente o valor total do pedido
+RF09: O sistema deve permitir que o cliente revise o pedido antes de finalizar a compra.
+RF10: O sistema deve permitir que o cliente escolha um endereço de entrega previamente salvo ou adicione um novo endereço.
+RF11: O sistema deve calcular o custo do frete com base no endereço de entrega informado.
+RF12: O sistema deve permitir a escolha de uma forma de pagamento, como cartão de crédito, débito, PIX, ou dinheiro na entrega.
+RF13: O sistema deve registrar o pedido e enviar as informações para a cozinha preparar os itens.
+RF14: O sistema deve gerar uma notificação para os atendentes do balcão ou entregadores informando sobre novos pedidos a serem preparados ou entregues.
+RF15: O sistema deve permitir que a equipe da cozinha altere o status do pedido (ex: em preparo, pronto para entrega).
+RF16: O sistema deve permitir que os administradores visualizem todos os pedidos em tempo real, com status atualizado (pendente, em preparo, em entrega, concluído).
+RF17: O sistema deve permitir que o administrador gere relatórios sobre vendas, itens mais pedidos, tempo médio de preparo, e performance de entrega.
+RF18: O sistema deve permitir que o cliente efetue o pagamento online com segurança.
+RF19: O sistema deve gerar um recibo de pagamento e enviar ao cliente, incluindo um resumo do pedido e informações do pagamento.
+RF20: O sistema deve permitir que o cliente classifique a experiência de entrega, incluindo a pontuação da entrega e a qualidade do serviço.
+
+
+Requisitos Não Funcionais (RNF): Definem restrições de qualidade, desempenho e segurança.
+RNF01: O sistema deve utilizar conexões seguras (HTTPS) para garantir que todas as transações de dados sejam criptografadas e protegidas.
+RNF02: O sistema deve garantir que senhas e informações sensíveis (como dados de pagamento) sejam armazenadas de forma criptografada.
+RNF03: O sistema deve validar pagamentos através de integração com gateways de pagamento seguros.
+RNF04: O sistema deve ser capaz de processar até 1.000 pedidos simultâneos sem degradação de desempenho, especialmente durante picos de alta demanda.
+RNF05: O tempo de resposta para carregar o cardápio e realizar a finalização de um pedido não deve ultrapassar 3 segundos em conexões padrão de internet.
+RNF06: O tempo de processamento de pagamento deve ser inferior a 5 segundos, garantindo que os clientes não enfrentem atrasos significativos durante o checkout.
+RNF07: O sistema deve ser intuitivo e fácil de usar, com um design amigável e responsivo.
+RNF08: O sistema deve fornecer mensagens de erro claras e úteis para os usuários, como "Endereço inválido", "Pagamento não autorizado", etc., sem expor informações sensíveis.
+RNF09: O processo de finalização de pedido deve ser simples e rápido, com no máximo 3 etapas: escolha do item, informações de entrega e pagamento.
+RNF10: O sistema deve ser compatível com os navegadores mais populares, como Google Chrome, Firefox, Safari e Edge.
+RNF11: O código do sistema deve ser bem documentado, facilitando futuras atualizações, correções de bugs e integrações com novos serviços.
+
+
+Regras de Negócio (RN): Definem as regras da empresa.
