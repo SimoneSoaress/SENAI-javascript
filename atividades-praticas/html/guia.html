@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUIA DE TAGS - HTML</title>
+</head>
+<body>
+    
+    <header>
+            <h1>Guia Rápido de Tags HTML</h1>
+    </header>
+
+    <hr>
+
+    <h2> -- Títulos -- </h2>
+    <p>Os títulos são utilizados para definir hierarquia e importância na página!</p>
+
+    <hr>
+
+    <h2>Paragrafos e Formatação (p, strong/b, em/i, br)</h2>
+    <p>o paragrafo vai ser utilizado para pequenos blocos de texto e formatação para dar destaque em trechos necessários.</p>
+
+    <br>Deixar o texto em <b>negrito</b>
+    <br>Dar ênfase em um <i>texto</i>
+</p>
+<hr>
+
+<h2>Lista (UL, OL, DL, LI)</h2>
+<h3>Lista não ordenada - quando não temos uma ordem específica</h3>
+
+<ul>
+    <li>Café</li>
+    <li>Pão</li>
+    <li>Arroz</li>
+    <li>Feijão</li>
+    <li>Limão</li>
+</ul>
+
+<h3>Lista Ordenada OL - para ordens especificas</h3>
+<ol>
+    <li>Primeiro, separe os ingredientes</li>
+    <li>Depois, coloque os ingredientesno liquificador</li>
+    <li>Sirva o Suco</li>
+</ol>
+
+<h3>Lista de Definição DL - para termos a definições</h3>
+<dl>
+    <dt>HTML</dt>
+    <dd> Linguagem de marcação para criar estruturas web.</dd> 
+    <!-- dt (TITULO) | dd (DESCRIÇÃO )-->
+
+    <dt>CSS</dt>
+    <dd>Linguagem utilizada para estilizar páginas web.</dd>
+</dl>
+<hr>
+
+<!-- <h3>Comentário</h3> -->
+
+<h2>Links (A)</h2>
+<p>Ele cria o link (âncora) entre pagina e recursos.</p>
+
+<a href="https://www.google.com/">Ir para o GOOGLE</a>
+<br>
+<a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Ir para o Google em uma nova aba</a>
+
+<hr>
+
+<h2>Imagens (IMG, Figure)</h2>
+<p>Para adicionar imagens na página</p>
+
+<img src="https://picsum.photos/300/150" alt="Exemplo de imagem de 300x150 pixels!">
+<br>
+
+<figure>
+    <img src="https://picsum.photos/300/150" alt="Exemplo de imagem de 300x150 pixels!">
+    <figcaption>Exemplo de imagem de 300x150 pixels</figcaption>
+</figure>
+<hr>
+
+<h2>Tabelas (table, tr, th, thead, tbody,tfoot)</h2>
+<p>Utilizadas para trabalhar com linhas e colunas</p>
+
+<table border="1">
+    <tbody>
+        <thead>
+            <!-- tr (LINHA) -->
+            <tr>
+            <th>Produtos</th>
+            <th>Quantidade</th>
+            <th>Preço Unitário</th>
+            </tr>
+        </thead>
+        <hr>
+
+        <tr>
+            <td>Maça</td>
+            <td>5</td>
+            <td>R$0,60</td>
+        </tr>
+        <hr>
+
+        <tr>
+            <td>Banana</td>
+            <td>12</td>
+            <td>R$1,50</td>
+        </tr>
+        <hr>
+
+        <tr>
+            <td>Limão</td>
+            <td>15</td>
+            <td>R$0,99</td>
+        </tr>
+        <hr>
+
+        <tr>
+            <td>Laranja</td>
+            <td>6</td>
+            <td>R$10,30</td>
+        </tr>
+        <footer>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>R$14,00</td>
+            </tr>
+        </footer>
+    </tbody>
+</table>
+
+<hr>
+
+<h2>DIV</h2>
+<p>Divisórias do código</p>
+
+<div>
+    <p>Paragrafo dentro da div</p>
+</div>
+
+
+</body>
+</html>
