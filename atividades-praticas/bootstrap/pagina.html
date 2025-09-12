@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> EXEMPLO DE PÁGINA BOOTSTRAP </title>
+    <title>PÁGINA BOOTSTRAP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
@@ -30,24 +30,10 @@
                 <a class="nav-link" href="#">Contato</a>
               </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
             </form>
           </div>
         </div>
@@ -82,29 +68,119 @@
         </button>
       </div>
     <!-- FIM CAROUSEL -->
-    
 
 
+    <!-- INICIO SOBRE -->
+    <!--div.container -->
+    <div class="container mt-5" id="Sobre">
+      <div class="row">
+        <!-- div.row>div.col-12.col-md-6*2 -->
+        <div class="col-12 col-md-6">
+          <!-- img.img-fluid.rounded -->
+          <img src="/atividades-praticas/bootstrap/pictures/Imagem-blog-Tecnologia-nas-empresas-1024x683.jpg" alt="" class="img-fluid rounded" height="400">
+        </div>
+
+        <div class="col-12 col-lg-3 d-flex align-items-center">
+          <div>
+          <h2>Sobre Nós</h2>
+            <p>Somos uma empresa de tecnologia, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum expedita velit quae deleniti, voluptatem esse deserunt error iste quos neque delectus! Numquam odit vero quod, molestiae quasi voluptatum veritatis laboriosam!</p>
+          </div>
+
+
+      </div>
+    </div>
+    <!-- FIM SOBRE --> 
+
+<hr>
     <!-- INICIO SERVIÇOS -->
-    <div class="container text-center">
+    <div class="container text-center my-3" id="Serviços">
         <h2>Nossos Serviços</h2>
 
+<hr>
         <!-- div.row>div.col-12.col-md-4*3 -->
         <div class="row">
-            <div class="col-12 col-md-4"></div>
-            <div class="col-12 col-md-4"></div>
-            <div class="col-12 col-md-4"></div>
+            <div class="col-12 col-md-4 mt-3">
+              <div class="card">
+                <img src="https://picsum.photos/400/300?random=4" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Desenvolvimento Web</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet animi explicabo voluptatum, odio, reprehenderit, molestias doloribus optio iure error recusandae alias perspiciatis blanditiis pariatur iusto quia. Magni ratione temporibus laboriosam.</p>
+                  <a href="#" class="btn btn-outline-default btn-outline-success">Entrar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mt-3">
+              <div class="card">
+                <img src="https://picsum.photos/400/300?random=5" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Suporte 24hs</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, ab culpa perferendis nihil veniam praesentium sit, dolores earum quaerat suscipit impedit, architecto eveniet tenetur dicta perspiciatis eius doloribus minus cum.</p>
+                  <a href="#" class="btn btn-primary">Solicitar Suporte</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mt-3">
+              <div class="card">
+                <img src="https://picsum.photos/400/300?random=6" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Serviços</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odit qui deleniti placeat possimus excepturi itaque tenetur exercitationem culpa, delectus veniam distinctio sed error nesciunt temporibus praesentium ducimus in?</p>
+                  <a href="#" class="btn btn-primary">Ir para o Serviços</a>
+                </div>
+              </div>
+            </div>
+            <hr>        
+
         </div>
     </div>
-
-
-
     <!-- FIM SERVIÇOS -->
 
 
+    <!-- INICIO CONTATO -->
+    <!-- div.container>div.row>div.col -->     
+     <div class="container mt-6" id="Contato">
+      <div class="row">
+        <div class="col">
+          <h2>Contato</h2>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="digite seu nome">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="digite sua cidade">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Telefone</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="(99) 99999-9999">
+          </div>      
+       
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          
+          <div class="d-grid gap-2 d-md-block my-3">
+            <button class="btn btn-primary" type="button">Enviar</button>
+          </div>
+          
+      
+        </div>
+      </div>
+     </div>
+    <!-- FIM CONTATO -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
-
-
 </html>
