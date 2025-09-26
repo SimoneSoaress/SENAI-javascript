@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Arrays e Objetos JS</title>
+</head>
+<body>
+
+    <p>Aperte F12 p/ ver os resultados</p>
+
+    <script>
+        //EXERCICIO 1 [] - ARRAY
+
+        function exercicio1(){
+        const playlist = ["Lie is a lie", "Beautiful Things", "Yellow"]
+        console.log(playlist[playlist.length -1 ]); // mostra o 1º item
+
+        playlist.push("Complicated"); //add um item
+        console.log(playlist);
+
+        playlist.pop(); //remove o ultimo item
+
+        console.log(playlist.length); //tamanho do array
+        }
+
+
+        //EXERCICIO 2 {} - OBJETO
+
+        function exercicio2(){
+        const filme = {
+            titulo: "Wandinha",
+            ano: 2025,
+            diretor: "Tim Burton"
+        }
+        console.log(`O filme ${filme.titulo}, dirigido por ${filme.diretor}, foi lançado em ${filme.ano}.`);
+
+        //add propriedade com array
+        filme.personagens = "Wandinha Adams", "Tyler",
+        "Enid";
+        console.log(filme.personagens[0]); // exibi o 1º personagens
+
+        console.log(filme); // exibi todo objeto
+        }
+
+    </script>
+    
+</body>
+</html>
