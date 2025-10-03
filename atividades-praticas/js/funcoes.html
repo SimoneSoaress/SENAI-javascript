@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNÇÕES</title>
+</head>
+<body>
+    
+    <p>Aperte F12 para ver os resultados</p>
+
+</body>
+
+<script>
+    // função nomeada sem parametros
+        function saudacao(){
+            console.log("Olá, mundo!");
+        }
+
+        saudacao();
+
+    // função nomeada com parametros
+        function somar(num1, num2){
+            console.log(num1 + num2);
+            // retorno
+            return num1 + num2;
+        }
+
+        const soma = somar(2,4);
+        console.log(soma);
+
+    //funcao anonima
+
+        subtrair = function(num1, num2){
+            return num1 - num2;
+        }
+
+        console.log(subtrair(10,2));
+
+    //funcao anonima com arrow function
+        //return explicito
+        const multiplicar = (num1,num2) => {
+            return num1 * num2;
+        }
+        console.log(multiplicar(2,2));
+
+        //return implicito
+        const divisao = (num1, num2) => num1/num2;
+
+    //funcao com parametro padrão ou opcional
+        function cumprimentar(nome = "Visitante"){
+            console.log(`Olá ${nome}`);
+        }
+        cumprimentar("Lucas");
+        cumprimentar();
+
+    // funcao callback
+        function calcular(num1,num2,operacao){
+            return operacao(num1,num2);
+        }
+
+        console.log(calcular(2,2,somar));
+        console.log(calcular(2,2,multiplicar));
+
+    //funcao assincrona
+        async function buscarDados(){
+            const resposta = await fetch("https://brasilapi.com.br/api/feriados/v1/2025");
+            const dados = await resposta.json();
+            console.log(dados);
+        }
+        buscarDados();
+
+
+    //EXERCICIO 1 
+    const calcularArea = (largura, altura) => largura * altura
+    const area = calcularArea(21,13);
+    console.log(area)
+
+
+    //EXERCICIO 2
+    const ehPar = (numero) => numero % 2 === 0;
+    console.log(ehPar(4));
+    console.log(ehPar(7));
+
+
+    //EXERCICIO 3
+    const celsiusParaFahrenheit = (temperaturaCelsius) => ((temperaturaCelsius * 9/5) + 32).tofixed(1);
+    console.log(celsiusParaFahrenheit(41));
+
+
+</script>
+</html>
