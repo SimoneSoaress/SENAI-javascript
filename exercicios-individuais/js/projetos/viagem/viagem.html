@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custo de Viagem</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        body, html { /* estilizando o fundo da página */
+            height: 100%;
+            background-color: midnightblue;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }        
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div class="col-lg-6 col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h1 class="h4 m-0">Calculadora de Custo de Viagem</h1>
+                    <hr>
+                        <nav class="navbar bg-body-tertiary">
+                            <div class="container">
+                            <a class="navbar-brand" href="#">
+                                <img src="/exercicios-individuais/js/projetos/viagem/logoViagem.jpg" alt="">
+                            </a>
+                            </div>
+                        </nav>
+                </div>
+                <div class="card-body p-4">
+                    <form id="travel-form">
+                        <div class="mb-3">
+                            <label for="distancia" class="form-label">Distância km</label>
+                            <input type="number" name="form-control" id="distancia" placeholder="Ex: 300" min="0" step="any" >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="consumo" class="form-label">Consumo km/l</label>
+                            <input type="number" name="form-control" id="consumo" placeholder="Ex: 12" min="0.1" step="any" >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="preco" class="form-label">Preço do Combustível</label>
+                            <input type="number" name="form-control" id="preco" placeholder="Ex: 5.5" min="0" step="any" >
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="viajantes" class="form-label">Números de Viajantes</label>
+                            <input type="number" name="form-control" id="viajantes" placeholder="Ex: 2" min="1" step="1" >
+                        </div>
+
+
+
+                        
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container"></div>
+
+
+    <div class="text-center mt-4">
+        <small class="text-muted">Desenvolvido por <span class="my-name"></span></small>
+    </div>
+
+    <script src="/exercicios-individuais/js/projetos/viagem/viagem.js"></script>
+
+</body>
+</html>
