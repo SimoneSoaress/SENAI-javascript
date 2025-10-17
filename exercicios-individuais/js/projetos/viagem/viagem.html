@@ -3,93 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custo de Viagem</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <title>Calculadora de Custo de Viagem</title>
+    <!-- Link do Bootstrap (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body, html { /* estilizando o fundo da página */
-            height: 100%;
-            background-color: midnightblue;
+        /* Background e Estilo do Corpo */
+        body {
+            background: linear-gradient(145deg, #212121, #333333); /* Gradiente escuro */
+            color: #e1e1e1; /* Texto claro para contraste */
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
         }
 
-        .container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }        
+        .container {
+            max-width: 700px;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            color: #00bcd4; /* Azul neon */
+            margin-bottom: 30px;
+            text-shadow: 0px 4px 8px rgba(0, 188, 212, 0.4); /* Sombra suave no título */
+        }
+
+        /* Estilização dos Cards */
+        .card {
+            border-radius: 15px;
+            background: #222; /* Fundo escuro nos cards */
+            border: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+        }
+
+        .card-body {
+            background-color: #333;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: inset 0 6px 15px rgba(6, 79, 128, 0.5); /* Sombra interna */
+        }
+
+        /* Estilo das Labels e Inputs */
+        .form-label {
+            font-weight: bold;
+            color: #e1e1e1; /* Texto claro nas labels */
+        }
+
+        .form-control {
+            background-color: #444;
+            color: #fff;
+            border: 1px solid #555;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Efeito de sombra leve nos inputs */
+        }
+
+        .form-control:focus {
+            border-color: #0e95a7; /* Borda azul neon */
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.4); /* Brilho suave ao focar */
+        }
+
+        /* Botão de Calcular */
+        .btn-calcular {
+            background-color: #09aec4;
+            color: white;
+            border-radius: 12px;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0px 6px 18px rgba(0, 188, 212, 0.4); /* Sombra do botão */
+        }
+
+        .btn-calcular:hover {
+            background-color: #0097a7; /* Azul mais escuro no hover */
+            box-shadow: 0px 10px 30px rgba(0, 188, 212, 0.6); /* Efeito de hover com sombra maior */
+            transform: translateY(-2px); /* Efeito de "elevação" */
+        }
+
+        /* Estilo dos Resultados */
+        .result-card {
+            background-color: #444;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0px 6px 20px rgba(16, 124, 143, 0.4); /* Sombra para a área de resultados */
+        }
+
+        .result-card h5 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00bcd4; /* Azul neon para destacar os títulos */
+        }
+
+        .result-card p {
+            font-size: 1.2rem;
+            color: #e1e1e1; /* Texto claro */
+        }
+
+        .result-card .value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #4caf50; /* Verde limão para destacar o valor */
+        }
+
+        /* Adicionando um efeito de "hover" nas entradas */
+        .form-control:hover {
+            border-color: #0f565f;
+            box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3); /* Efeito sutil quando o usuário passa o mouse */
+        }
+
+        /* Animações e Efeitos */
+        .form-control,
+        .btn-calcular {
+            transition: all 0.3s ease-in-out; /* Transições suaves */
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
-
 <body>
+    <div class="container">
+        <h1>Calculadora de Custo de Viagem</h1>
 
-    <div class="container py-5">
-        <div class="col-lg-6 col-md-8">
-            <div class="card shadow">
-                <div class="card-header bg-primary text-white text-center">
-                    <h1 class="h4 m-0">Calculadora de Custo de Viagem</h1>
-                    <hr>
-                        <nav class="navbar bg-body-tertiary">
-                            <div class="container">
-                            <a class="navbar-brand" href="#">
-                                <img src="/exercicios-individuais/js/projetos/viagem/logoViagem.jpg" alt="">
-                            </a>
-                            </div>
-                        </nav>
-                </div>
-                <div class="card-body p-4">
-                    <form id="travel-form">
-                        <div class="mb-3">
-                            <label for="distancia" class="form-label">Distância km</label>
-                            <input type="number" name="form-control" id="distancia" placeholder="Ex: 300" min="0" step="any" >
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="consumo" class="form-label">Consumo km/l</label>
-                            <input type="number" name="form-control" id="consumo" placeholder="Ex: 12" min="0.1" step="any" >
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="preco" class="form-label">Preço do Combustível</label>
-                            <input type="number" name="form-control" id="preco" placeholder="Ex: 5.5" min="0" step="any" >
-                        </div>
-
-                        <div class="mb-3">
-
-                            <label for="viajantes" class="form-label">Números de Viajantes</label>
-                            <input type="number" name="form-control" id="viajantes" placeholder="Ex: 2" min="1" step="1" >
-                        </div>
-
-
-
-                        
-                    </form>
-
-                </div>
-
+        <div class="card">
+            <div class="card-body">
+                <form id="viagemForm">
+                    <div class="mb-4">
+                        <label for="distancia" class="form-label">Distância (km)</label>
+                        <input type="number" id="distancia" class="form-control" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="consumo" class="form-label">Consumo do veículo (km/L)</label>
+                        <input type="number" id="consumo" class="form-control" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="precoCombustivel" class="form-label">Preço do combustível (R$)</label>
+                        <input type="number" id="precoCombustivel" class="form-control" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="numViajantes" class="form-label">Nº de Viajantes</label>
+                        <input type="number" id="numViajantes" class="form-control" required>
+                    </div>
+                    <button type="button" id="btnCalcular" class="btn-calcular">Calcular Custos</button>
+                </form>
             </div>
-
         </div>
 
+        <!-- Área de Resultados -->
+        <div class="result-card" id="resultados">
+            <h5>Resultados</h5>
+            <p id="resultadoTotal">Custo Total com Combustível: <span class="value">R$ 0,00</span></p>
+            <p id="resultadoPessoa">Custo por Pessoa: <span class="value">R$ 0,00</span></p>
+        </div>
     </div>
 
-
-
-
-
-
-
-
-
-    <div class="container"></div>
-
-
-    <div class="text-center mt-4">
-        <small class="text-muted">Desenvolvido por <span class="my-name"></span></small>
-    </div>
-
-    <script src="/exercicios-individuais/js/projetos/viagem/viagem.js"></script>
-
+    <!-- Link'S -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/exercicios-individuais/js/projetos/viagem/viagem.js"></script> 
 </body>
 </html>
