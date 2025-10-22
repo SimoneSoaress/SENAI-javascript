@@ -1,37 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAMBURGUERIA</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <title>Currículo - Simone Mayara</title>
+    <!-- Incluindo o Bootstrap CSS (versão mais recente) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluindo o Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Personalização do tema -->
+    <style>
+        body {
+            background: linear-gradient(145deg, #2C3E50, #34495E); /* Azul petróleo com gradiente */
+            color: #ecf0f1;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #2980B9;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .card {
+            background-color: #62717e;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card-header {
+            background-color: #2980B9;
+            color: white;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .list-group-item {
+            background-color: #4b6177;
+            border: none;
+            color: #0c0d0e;
+        }
+        .list-group-item:hover {
+            background-color: #1ABC9C; /* Um toque de verde para interatividade */
+        }
+        footer {
+            background-color: #2C3E50;
+            color: #ecf0f1;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Currículo - Simone Mayara</a>
+        </div>
+    </nav>
 
-    <!-- INICIO MENU SUPERIOR - LOGO EMPRESA-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <ul class="nav nav-pills nav-fill mt-3 m-4" >
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Nós</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Depoimentos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Contato</a>
-            </li>
-    
-        </ul>
-     
-    
+    <!-- Seção Principal -->
+    <header class="container mt-5">
+        <div class="row">
+            <!-- Coluna do currículo -->
+            <section class="col-md-8">
+                <!-- Card de Apresentação -->
+                <div class="card shadow-lg mb-4">
+                    <div class="card-header">
+                        <h3>Simone Mayara</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead">Idade: 14 de abril de 1993</p>
+                        <p><i class="bi bi-telephone-fill"></i> Telefone: <strong>18 99709-7618</strong></p>
+                        <p class="text-muted">Buscando novas oportunidades no mercado de trabalho e pronta para novos desafios.</p>
+                    </div>
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+                <!-- Seção de Experiência -->
+                <section class="mt-4">
+                    <h4><i class="bi bi-briefcase"></i> Experiência Profissional</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            Cargo: <strong>Assistente Administrativa</strong>
+                            <span class="badge bg-success float-end">2019 - 2024</span>
+                        </li>
+                        <li class="list-group-item">
+                            Cargo: <strong>Estagiária de Suporte</strong>
+                            <span class="badge bg-warning float-end">2024 - 2025</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Seção de Educação -->
+                <section class="mt-4">
+                    <h4><i class="bi bi-book"></i> Formação Acadêmica</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Curso: <strong>Análise e Desenvolvimento de Sistemas</strong> - Toledo Prudente (2024 - 2026)</li>
+                        <li class="list-group-item">Curso: <strong>INGLÊS</strong> - Curso Online (2025)</li>
+                    </ul>
+                </section>
+
+                <!-- Seção de Habilidades -->
+                <section class="mt-4">
+                    <h4><i class="bi bi-stars"></i> Habilidades</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Gestão de projetos</li>
+                        <li class="list-group-item">Projetos Digitais</li>
+                        <li class="list-group-item">Atendimento ao cliente com Sistemas ERP</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Coluna de Contato -->
+            <section class="col-md-4">
+                <!-- Card de Contato -->
+                <div class="card shadow-lg mb-4">
+                    <div class="card-header bg-secondary">
+                        <h5>Contato</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><i class="bi bi-geo-alt-fill"></i> Localização: São Paulo, SP</p>
+                        <p><i class="bi bi-envelope-fill"></i> Email: simonemayarasoares@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Card de Redes Sociais -->
+                <div class="mt-4">
+                    <h5>Redes Sociais</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item"><i class="bi bi-facebook"></i> Facebook: simonemayara</li>
+                        <li class="list-group-item"><i class="bi bi-linkedin"></i> LinkedIn: simonesoaress</li>
+                        <li class="list-group-item"><i class="bi bi-instagram"></i> Instagram: simonemayarasoares</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-center py-3 mt-5">
+        <p>&copy; 2025 Simone Mayara. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Incluindo o Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
