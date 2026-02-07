@@ -1,32 +1,42 @@
-# MEU REPOSITÓRIO SENAI - CURSO JAVASCRIPT
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/632fff29-9e32-4797-b70e-3a305dac695f" width="60" height="60"></td>
+    <td><h1>Lógica de Programação e Algoritmos com JavaScript</h1></td>
+  </tr>
+</table>
+Este repositório reúne os projetos e desafios desenvolvidos durante o curso de **Programação em Javascript (60hs)** realizado no SENAI Prudente. O foco principal foi o domínio da sintaxe moderna (ES6+), estruturas de dados e desenvolvimento de raciocínio lógico aplicado à resolução de problemas.
 
-🚀 Curso de JavaScript - Fundamentos e Prática
-Uma jornada prática para você dominar a linguagem de programação mais popular da web!
+## 🚀 Tecnologias e Ferramentas
 
-📚 Sobre o Curso
-Este curso apresenta os conceitos essenciais do JavaScript moderno (ES6+), desde os fundamentos até aplicações práticas em projetos reais.
+Neste projeto, utilizei as seguintes tecnologias para desenvolver a lógica e gerenciar o código:
 
-JavaScript é a linguagem que dá vida às páginas web, e hoje é utilizada também no back-end com Node.js, em aplicações mobile, games e muito mais.
+<p align="left">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JS">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="NodeJS">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</p>
 
-🧠 O que APRENDI
-✅ Introdução ao JavaScript e ambiente de desenvolvimento
-✅ Variáveis, tipos de dados e operadores
-✅ Estruturas de decisão e laços de repetição
-✅ Funções e escopo
-✅ Arrays e objetos
-✅ Manipulação do DOM
-✅ Eventos e interatividade
-✅ Introdução ao ES6+ (arrow functions, let/const, template strings etc.)
-✅ Projeto final com HTML, CSS e JavaScript
+---
 
-🛠️ Pré-requisitos
-Nenhuma experiência prévia com JavaScript é necessária, mas é recomendado ter:
+## 🧠 Competências Desenvolvidas
+* **Lógica de Programação:** Implementação de algoritmos complexos e tratamento de condições.
+* **Estruturas de Dados:** Manipulação de arrays, objetos e métodos nativos de iteração.
+* **Resolução de Problemas:** Foco em atenção a detalhes e boas práticas de código limpo (Clean Code).
 
-Conhecimento em informática básica!
-Curiosidade e vontade de aprender! 😄
-💻 Tecnologias Utilizadas
-JavaScript 
-HTML5
-CSS3
-VS Code 
-Navegador (Google Chrome recomendado)
+## 📂 Estrutura do Repositório
+* `/exercicios`: Desafios de lógica focados em operadores, loops e funções.
+* `/projetos`: Pequenas aplicações que integram os conhecimentos adquiridos.
+
+## 💻 Como Executar
+1. Clone este repositório: 
+   ```bash
+   git clone [https://github.com/SimoneSoaress/SENAI-javascript.git](https://github.com/SimoneSoaress/SENAI-javascript.git)
+2. Certifique-se de ter o Node.js instalado.
+
+3. Acesse a pasta do exercício desejado e execute:
+    ```bash
+   node nome_do_arquivo.js
+
+## 
+🤓 Desenvolvido por Simone Mayara Soares — Graduanda em ADS (5º Termo).
